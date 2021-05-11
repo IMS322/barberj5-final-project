@@ -1,0 +1,102 @@
+<html>
+<head>
+    <title>
+        Jacqui's Closet
+    </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="first">
+        <div id="second">
+            <img id="logo" src="img1.png">
+
+            <br>
+            <br>
+            <br>
+
+            <h1>
+                CHECKOUT
+            </h1>
+        </div>
+    </div>
+</body>
+
+<button onClick="check()">
+    CLICK TO CHECKOUT
+</button>
+
+<button onClick="alert('Your Information Has Been Submitted');">
+    SUBMIT INFORMATION
+</button> 
+
+<p id="checkout"></p>
+
+<script>
+    var yes = document.getElementById("checkout");
+    function check() {
+        
+        var form = document.createElement("form");
+        form.setAttribute("method", "post");
+        form.setAttribute("action", "submit");
+        
+        var n = document.createElement("input");
+        n.setAttribute("type", "text");
+        n.setAttribute("name", "FirstName");
+        n.setAttribute("placeholder", "First Name")
+        
+        var l = document.createElement("input");
+        l.setAttribute("type", "text");
+        l.setAttribute("name", "LastName");
+        l.setAttribute("placeholder", "Last Name")
+        
+        var email = document.createElement("input");
+        email.setAttribute("type", "text");
+        email.setAttribute("name", "email");
+        email.setAttribute("placeholder", "Email");
+        
+        var number = document.createElement("input");
+        number.setAttribute("type", "text");
+        number.setAttribute("name", "PhoneNumber");
+        number.setAttribute("placeholder", "Phone Number");
+        
+        var add = document.createElement("input");
+        add.setAttribute("type", "text");
+        add.setAttribute("name", "address");
+        add.setAttribute("placeholder", "Address");
+        
+        var hold = document.createElement("input");
+        hold.setAttribute("type", "text");
+        hold.setAttribute("name", "hold");
+        hold.setAttribute("placeholder", "Card Holder's Name");
+        
+        var card = document.createElement("input");
+        card.setAttribute("type", "text");
+        card.setAttribute("name", "card");
+        card.setAttribute("placeholder", "Card Number");
+        
+        var exp = document.createElement("input");
+        exp.setAttribute("type", "text");
+        exp.setAttribute("name", "exp");
+        exp.setAttribute("placeholder", "Expire Date");
+        
+        var cvc = document.createElement("input");
+        cvc.setAttribute("type", "text");
+        cvc.setAttribute("name", "cvc");
+        cvc.setAttribute("placeholder", "CVC");
+        
+        form.appendChild(n);
+        form.appendChild(l);
+        form.appendChild(email);
+        form.appendChild(number);
+        form.appendChild(add);
+        form.appendChild(hold);
+        form.appendChild(exp);
+        form.appendChild(cvc);
+        form.appendChild(card);
+        
+        document.getElementsByTagName("body")[0]
+            .appendChild(form);
+    }
+    
+</script>
+</html>

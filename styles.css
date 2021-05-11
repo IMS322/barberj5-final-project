@@ -1,0 +1,92 @@
+h1 {
+    font-family: andale mono;
+    font-size: 50px;
+    background-color: 25428d;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+}
+
+h2 {
+	background-color: aecae9;
+	padding-right: 110px;
+	padding-left: 130px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-family: andale mono;
+	font-weight: 100;
+}
+
+h4 {
+	display: inline;
+	background-color: aecae9;
+	padding-right: 110px;
+	padding-left: 130px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-family: andale mono;
+	font-weight: 100;
+}
+
+a{
+	color: black;
+	text-decoration: none;
+}
+
+a:hover{
+	color: white;
+	opacity: .5;
+}
+
+.placeholder {
+    width: 40%;
+
+}
+
+button{
+	display: inline;
+	background-color: aecae9;
+	padding-right: 110px;
+	padding-left: 130px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-family: andale mono;
+	font-weight: 100;
+	border: none;
+}
+
+li{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-family: andale mono;
+	font-weight: 100;
+	font-size: 20px;
+	list-style: none;
+	color: black;
+}
+
+#submit{
+	display: inline;
+	background-color: aecae9;
+	padding-right: 110px;
+	padding-left: 130px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-family: andale mono;
+	font-weight: 100;
+	border: none;
+}
+
+@media (max-width: 700px){
+	nav h4 {
+		display: flex;
+		border: none;
+	}
+
+    #logo {
+        width: 90%;
+    }
+}
